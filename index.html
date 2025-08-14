@@ -15,23 +15,36 @@
         min-height: 100vh;
     }
     header {
-        background: linear-gradient(45deg, #ff6b6b, #f06595);
-        color: white;
-        padding: 15px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        font-size: 1.8em;
-        font-weight: bold;
-        letter-spacing: 1px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    header img {
-        height: 40px;
-        width: auto;
-        border-radius: 6px;
-    }
+		background: black;
+		color: white;
+		padding: 15px 30px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		height: 70px;
+		width: 100%;
+	}
+
+	header img {
+		height: 100px;
+		width: auto;
+		border-radius: 6px;
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	header span {
+		flex: 1;
+		text-align: center;
+		font-size: 1.8em;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+
+
     main {
         max-width: 1200px;
         margin: auto;
@@ -100,20 +113,26 @@
         background: linear-gradient(45deg, #218838, #17a2b8);
     }
     footer {
-        background: #343a40;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        font-size: 0.95em;
-        box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
-    }
+		background: #222;
+		color: #ccc;
+		text-align: center;
+		padding: 20px;
+		font-size: 0.95em;
+		margin-top: 40px;
+	}
+
+	.footer-content p {
+		margin: 5px 0;
+	}
+
 </style>
 </head>
 <body>
 
+
 <header>
     <img src="uploads/logo.jpeg" alt="XIVY Logo">
-    📱 XIVY Mobile Case Showcase
+    <span>XIVY Mobile Accessories Hub</span>
 </header>
 
 <main>
@@ -159,8 +178,13 @@
 </main>
 
 <footer>
-    © 2025 ShyamSphere International. All Rights Reserved.
+    <div class="footer-content">
+        <p>© 2025 ShyamSphere International. All Rights Reserved.</p>
+        <p>✉️ support@xivy.in</p>
+        <p>📍 Mumbai,Maharastra, India</p>
+    </div>
 </footer>
+
 
 </body>
 </html>
