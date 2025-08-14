@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XIVY</title>
+<link rel="icon" type="image/png" href="/uploads/icon.png">
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    header {
+        background: linear-gradient(45deg, #ff6b6b, #f06595);
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 1.8em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    header img {
+        height: 40px;
+        width: auto;
+        border-radius: 6px;
+    }
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+        flex: 1;
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 1.8em;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    .product {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .product img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .product-content {
+        padding: 15px;
+        text-align: center;
+    }
+    .product h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: #444;
+    }
+    .price {
+        color: #28a745;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .desc {
+        font-size: 0.95em;
+        color: #555;
+        min-height: 50px;
+    }
+    .buy-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background: linear-gradient(45deg, #28a745, #20c997);
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: background 0.3s ease;
+    }
+    .buy-btn:hover {
+        background: linear-gradient(45deg, #218838, #17a2b8);
+    }
+    footer {
+        background: #343a40;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 0.95em;
+        box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="uploads/logo.jpeg" alt="XIVY Logo">
+    📱 XIVY Mobile Case Showcase
+</header>
+
+<main>
+    <h2>Our Latest Designs</h2>
+    <div class="products">
+        <div class="product">
+            <img src="uploads/crystal.webp" alt="Crystal Clear Mobile Case">
+            <div class="product-content">
+                <h3>XIVY Cystal Clear Mobile Case</h3>
+                <div class="price">₹299</div>
+                <div class="desc">A stylish Crystal Clear design case with durable protection, Hard and a glossy finish.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="uploads/transparent.jpg" alt="Transparent Mobile Case">
+            <div class="product-content">
+                <h3>XIVY Transparent Mobile Case</h3>
+                <div class="price">₹249</div>
+                <div class="desc">Minimalist transparent case that shows off your phone's beauty while protecting it.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="uploads/rugged.jpeg" alt="Rugged Armor Case">
+            <div class="product-content">
+                <h3>XIVY Rugged Armor Case</h3>
+                <div class="price">₹399</div>
+                <div class="desc">Heavy-duty protection with a sleek matte finish for extreme durability.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="uploads/silicon.jpg" alt="Silicon Mobile Case">
+            <div class="product-content">
+                <h3>XIVY Silicon Mobile Case</h3>
+                <div class="price">₹349</div>
+                <div class="desc">Silicon finish for a premium look that turns heads everywhere.</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2025 ShyamSphere International. All Rights Reserved.
+</footer>
+
+</body>
+</html>
